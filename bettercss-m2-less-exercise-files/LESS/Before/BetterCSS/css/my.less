@@ -1,24 +1,34 @@
-﻿@import "css/init.css";
+@import "css/init.css";
+
+@main-color: Pink;
+
 /* Basics */
-html {
+html
+{
   font-family: 'Open Sans', verdana, helvetica, sans-serif;
   font-size: 14px;
 }
-body {
-  background: Pink;
+body
+{
+  background: @main-color;
 }
-h1 {
+h1
+{
   font-size: 24px;
 }
-h2 {
+h2
+{
   font-size: 18px;
 }
-h3 {
+h3
+{
   font-size: 16px;
 }
+
 /* Layout */
-#container {
-  margin-top: 5px;
+#container
+{
+  margin-top:5px;
   width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -29,43 +39,54 @@ h3 {
   -webkit-border-radius: 5px;
   color: #000;
 }
+
 /* Sections */
-header h1 {
+header h1
+{
   font-size: 24px;
   font-family: 'Share', cursive;
   color: Blue;
 }
-nav {
+nav
+{
   font-size: 14px;
   font-weight: bold;
   float: right;
 }
-nav ul {
+nav ul
+{
   list-style-type: none;
 }
-nav ul li {
+nav ul li
+{
   float: left;
   margin: 2px;
 }
-nav ul li a {
+nav ul li a
+{
   text-decoration: none;
 }
-nav ul li a:hover {
+nav ul li a:hover
+{
   text-decoration: underline;
 }
-footer {
+footer
+{
   font-size: 9px;
   text-align: center;
   color: Blue;
 }
-footer nav {
+footer nav
+{
   float: none;
   display: inline-block;
   font-size: 9px;
   vertical-align: middle;
 }
+
 /* Forms */
-#contact-form {
+#contact-form
+{
   background: #f8f8f8;
   width: 400px;
   margin-left: auto;
@@ -75,9 +96,10 @@ footer nav {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   padding: 5px;
+
 }
-#contact-form input[type=textbox],
-#contact-form textarea {
+#contact-form input[type=textbox], #contact-form textarea
+{
   font-family: "Open Sans", Verdana, Helvetica, sans-serif;
   font-size: 18px;
   background: #ffffe0;
@@ -89,14 +111,16 @@ footer nav {
   -webkit-border-radius: 5px;
   padding: 2px;
 }
-#contact-form textarea {
+#contact-form textarea
+{
   height: 150px;
   font-family: "Open Sans", Verdana, Helvetica, sans-serif;
 }
-#contact-form label {
+#contact-form label
+{
   width: 150px;
 }
-#contact-form .validation {
+#contact-form .validation
+{
   display: none;
 }
-/*# sourceMappingURL=my.css.map */

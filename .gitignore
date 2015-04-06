@@ -41,3 +41,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Visual Studio Bin and Obj
+bettercss-m1-why-exercise-files/Why/BetterCSS/bin/*
+bettercss-m1-why-exercise-files/Why/BetterCSS/obj/*
+bettercss-m2-less-exercise-files/LESS/Before/BetterCSS/obj/*
+bettercss-m2-less-exercise-files/LESS/Before/BetterCSS/bin/*
+bettercss-m2-less-exercise-files/LESS/After/BetterCSS/obj/*
+bettercss-m2-less-exercise-files/LESS/After/BetterCSS/bin/*
+bettercss-m3-sass-exercise-files/SASS/After/BetterCSS/bin/*
+bettercss-m3-sass-exercise-files/SASS/After/BetterCSS/obj/*
+bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/bin/*
+bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/obj/*
