@@ -42,7 +42,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Visual Studio Bin and Obj
+# Visual Studio Stuff
+*.suo
 bettercss-m1-why-exercise-files/Why/BetterCSS/bin/*
 bettercss-m1-why-exercise-files/Why/BetterCSS/obj/*
 bettercss-m2-less-exercise-files/LESS/Before/BetterCSS/obj/*
