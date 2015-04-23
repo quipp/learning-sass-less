@@ -43,7 +43,6 @@ Temporary Items
 .apdisk
 
 # Visual Studio Stuff
-*.suo
 bettercss-m1-why-exercise-files/Why/BetterCSS/bin/*
 bettercss-m1-why-exercise-files/Why/BetterCSS/obj/*
 bettercss-m2-less-exercise-files/LESS/Before/BetterCSS/obj/*
@@ -54,3 +53,4 @@ bettercss-m3-sass-exercise-files/SASS/After/BetterCSS/bin/*
 bettercss-m3-sass-exercise-files/SASS/After/BetterCSS/obj/*
 bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/bin/*
 bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/obj/*
+*.suo
