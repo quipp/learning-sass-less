@@ -64,6 +64,8 @@
     <Content Include="css\my.css.map">
       <DependentUpon>my.css</DependentUpon>
     </Content>
+    <Content Include="css\colors.less" />
+    <Content Include="css\mixins.less" />
     <None Include="css\my.less" />
     <Content Include="css\my.css">
       <DependentUpon>my.less</DependentUpon>
