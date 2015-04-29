@@ -6,6 +6,6 @@ D:\speaking\PS\BetterCSS\Examples\BetterCSS\obj\Debug\BetterCSS.pdb
 C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\bin\BetterCSS.dll.config
 C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\bin\BetterCSS.dll
 C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\bin\BetterCSS.pdb
-C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\obj\Debug\BetterCSS.csprojResolveAssemblyReference.cache
 C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\obj\Debug\BetterCSS.dll
 C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\obj\Debug\BetterCSS.pdb
+C:\Users\Jason\Documents\GitHub\learning-sass-less\bettercss-m2-less-exercise-files\LESS\Before\BetterCSS\obj\Debug\BetterCSS.csprojResolveAssemblyReference.cache
