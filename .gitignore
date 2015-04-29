@@ -55,5 +55,3 @@ bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/bin/*
 bettercss-m3-sass-exercise-files/SASS/Before/BetterCSS/obj/*
 *.suo
 *.csproj.user
-*.dll
-*.pdb
