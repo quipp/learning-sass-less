@@ -44,6 +44,8 @@ Temporary Items
 
 # Visual Studio Stuff
 bin/
+Bin/
 obj/
+Obj/
 *.suo
 *.csproj.user
