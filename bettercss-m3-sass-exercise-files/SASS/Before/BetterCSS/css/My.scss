@@ -1,124 +1,152 @@
-@import "css/init.css";
+@import "init";
+@import "colors";
+@import "mixins";
+
+$baseFontSize: 16px;
+$rootPath: "http://localhost/";
+$baseClassName: "col";
+
+$app-size: 1024px;
+
+@function center-width($gutter) {
+    @return $app-size - ($gutter * 2);
+}
+
+.#{$baseClassName}1 {
+    font-size: $baseFontSize;
+}
+
+.#{$baseClassName}2 {
+    font-size: $baseFontSize;
+}
 
 /* Basics */
-html
-{
-  font-family: 'Open Sans', verdana, helvetica, sans-serif;
-  font-size: 10px + 12px;
+html {
+    font-family: 'Open Sans', verdana, helvetica, sans-serif;
+    font-size: 10px + 12px;
 }
-body
-{
-  background: #000;
+
+body {
+    background-color: darken($mainColor, 25%);
+    background-image: url("#{$rootPath}images/back.jpg");
 }
-h1
-{
-  font-size: 24px;
+
+h1 {
+    font-size: $baseFontSize + 10;
+
+    @if $app-size > 14px {
+        color: blue;
+    }
+    @elseif $app-size < 14px {
+        color: red;
+    }
 }
-h2
-{
-  font-size: 18px;
+
+h2 {
+    font-size: $baseFontSize + 6;
 }
-h3
-{
-  font-size: 16px;
+
+h3 {
+    font-size: $baseFontSize + 2;
+}
+
+@for $colNumber from 2 through 5 {
+    .col-#{$colNumber} {
+        width: $app-size / $colNumber - 10px;
+    }
 }
 
 /* Layout */
-#container
-{
-  margin-top:5px;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #FFF;
-  padding: 5px;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  color: #000;
+#container {
+    margin-top: 5px;
+    width: center-width(100px);
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFF;
+    padding: 5px;
+    @include rounded-corners-all;
+    color: $mainColor;
 }
 
 /* Sections */
-header h1
-{
-  font-size: 24px;
-  font-family: 'Share', cursive;
-  color: Blue;
+header h1 {
+    /*@extend nav;*/
+    font-size: 24px;
+    font-family: 'Share', cursive;
+    color: Blue;
 }
-nav
-{
-  font-size: 14px;
-  font-weight: bold;
-  float: right;
+
+nav {
+    font: {
+        size: $baseFontSize;
+        weight: bold;
+    }
+
+    float: right;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            float: left;
+            margin: 2px;
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
-nav ul
-{
-  list-style-type: none;
-}
-nav ul li
-{
-  float: left;
-  margin: 2px;
-}
-nav ul li a
-{
-  text-decoration: none;
-}
-nav ul li a:hover
-{
-  text-decoration: underline;
-}
-footer
-{
-  font-size: 9px;
-  text-align: center;
-  color: Blue;
-}
-footer nav
-{
-  float: none;
-  display: inline-block;
-  font-size: 9px;
-  vertical-align: middle;
+
+footer {
+    font-size: 9px;
+    text-align: center;
+    color: Blue;
+
+    nav {
+        float: none;
+        display: inline-block;
+        font-size: 9px;
+        vertical-align: middle;
+    }
 }
 
 /* Forms */
-#contact-form
-{
-  background: #f8f8f8;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  border: black 1px solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  padding: 5px;
+#contact-form {
+    background: #f8f8f8;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+    @include rounded-corners-all(15px);
+    padding: 5px;
+    font-size: $baseFontSize;
+}
 
+#contact-form input[type=text], #contact-form textarea {
+    font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+    font-size: 18px;
+    background: #ffffe0;
+    width: 250px;
+    display: block;
+    border: 1px #000 solid;
+    @include rounded-corners-all;
+    padding: 2px;
 }
-#contact-form input[type=textbox], #contact-form textarea
-{
-  font-family: "Open Sans", Verdana, Helvetica, sans-serif;
-  font-size: 18px;
-  background: #ffffe0;
-  width: 250px;
-  display: block;
-  border: 1px #000 solid;
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  padding: 2px;
+
+#contact-form textarea {
+    height: 150px;
+    font-family: "Open Sans", Verdana, Helvetica, sans-serif;
 }
-#contact-form textarea
-{
-  height: 150px;
-  font-family: "Open Sans", Verdana, Helvetica, sans-serif;
+
+#contact-form label {
+    width: 150px;
 }
-#contact-form label
-{
-  width: 150px;
-}
-#contact-form .validation
-{
-  display: none;
+
+#contact-form .validation {
+    display: none;
 }

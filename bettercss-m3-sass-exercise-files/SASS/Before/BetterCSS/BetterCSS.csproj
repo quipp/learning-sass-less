@@ -61,6 +61,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\colors.css">
+      <DependentUpon>colors.scss</DependentUpon>
+    </Content>
+    <Content Include="css\colors.min.css">
+      <DependentUpon>colors.css</DependentUpon>
+    </Content>
+    <Content Include="css\mixins.css">
+      <DependentUpon>mixins.scss</DependentUpon>
+    </Content>
+    <Content Include="css\mixins.min.css">
+      <DependentUpon>mixins.css</DependentUpon>
+    </Content>
     <Content Include="css\My.css">
       <DependentUpon>My.scss</DependentUpon>
     </Content>
@@ -68,9 +80,17 @@
       <DependentUpon>My.css</DependentUpon>
     </Content>
     <Content Include="Form.html" />
-    <Content Include="css\init.css" />
+    <Content Include="css\colors.scss" />
+    <Content Include="css\colors.css.map">
+      <DependentUpon>colors.css</DependentUpon>
+    </Content>
+    <None Include="css\init.scss" />
     <Content Include="css\My.css.map">
       <DependentUpon>My.css</DependentUpon>
+    </Content>
+    <Content Include="css\mixins.scss" />
+    <Content Include="css\mixins.css.map">
+      <DependentUpon>mixins.css</DependentUpon>
     </Content>
     <None Include="css\My.scss" />
     <Content Include="Web.config" />
